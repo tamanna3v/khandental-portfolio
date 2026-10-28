@@ -91,8 +91,16 @@ h2{font-size:clamp(28px,4vw,40px);line-height:1.15;margin:0 0 10px;font-weight:7
 .info{display:flex;flex-direction:column;gap:20px}
 .info dt{font-weight:600;font-size:15px;color:var(--ink-soft)}
 .info dd{margin:2px 0 0;font-size:20px}
-.map{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);min-height:320px;background:var(--mint)}
-.map iframe{border:0;width:100%;height:100%;min-height:320px;display:block}
+.map{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);min-height:380px;background:var(--mint)}
+.map iframe{border:0;width:100%;height:100%;min-height:380px;display:block}
+.revbox{display:flex;flex-wrap:wrap;align-items:center;gap:18px 28px;margin-top:34px;padding:24px 26px;border-radius:var(--radius);background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18)}
+.revbox .score{font-size:56px;font-weight:800;line-height:1}
+.revbox .meta{display:flex;flex-direction:column;gap:2px}
+.revbox .stars{font-size:22px}
+.revbox .acts{display:flex;flex-wrap:wrap;gap:10px;margin-left:auto}
+.why .btn{background:#fff;color:var(--ink)}
+.why .btn.ghost{background:transparent;color:#fff;border-color:#fff}
+@media (max-width:820px){.revbox .acts{margin-left:0}}
 @media (max-width:820px){.visit-grid{grid-template-columns:1fr}}
 
 .photo{padding:64px 0 0}
@@ -196,7 +204,17 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
           <p data-bn="ডাক্তার আর স্টাফ পুরো সময় পাশে থাকেন, চিকিৎসার পরেও খোঁজ নেন।" data-en="Doctors and staff stay with you throughout and follow up after treatment.">ডাক্তার আর স্টাফ পুরো সময় পাশে থাকেন, চিকিৎসার পরেও খোঁজ নেন।</p>
         </div>
       </div>
-      <p style="margin-top:30px"><a href="https://www.google.com/maps/search/?api=1&query=Khan%20Dental%20Clinic&query_place_id=ChIJOaRCGfXHVTcR8HXUzyVW5OY" target="_blank" rel="noopener" data-bn="Google-এ সব রিভিউ পড়ুন" data-en="Read all reviews on Google">Google-এ সব রিভিউ পড়ুন</a></p>
+      <div class="revbox">
+        <div class="score" data-bn="৪.৯" data-en="4.9">৪.৯</div>
+        <div class="meta">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <span data-bn="Google Maps-এ ৪৩০টি রিভিউ" data-en="430 reviews on Google Maps">Google Maps-এ ৪৩০টি রিভিউ</span>
+        </div>
+        <div class="acts">
+          <a class="btn" href="https://search.google.com/local/reviews?placeid=ChIJOaRCGfXHVTcR8HXUzyVW5OY" target="_blank" rel="noopener" data-bn="Google-এ সব রিভিউ পড়ুন" data-en="Read all reviews on Google">Google-এ সব রিভিউ পড়ুন</a>
+          <a class="btn ghost" href="https://search.google.com/local/writereview?placeid=ChIJOaRCGfXHVTcR8HXUzyVW5OY" target="_blank" rel="noopener" data-bn="রিভিউ লিখুন" data-en="Write a review">রিভিউ লিখুন</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -217,14 +235,15 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
         <dl class="info">
           <div><dt data-bn="ফোন" data-en="Phone">ফোন</dt><dd><a href="tel:+8801921553385" data-bn="০১৯২১-৫৫৩৩৮৫" data-en="+880 1921-553385">০১৯২১-৫৫৩৩৮৫</a></dd></div>
           <div><dt data-bn="ঠিকানা" data-en="Address">ঠিকানা</dt><dd data-bn="খ-১৫৪/২, বাড্ডা, ঢাকা ১২১২" data-en="Kha-154/2, Badda, Dhaka 1212">খ-১৫৪/২, বাড্ডা, ঢাকা ১২১২</dd></div>
+          <div><dt data-bn="Google Maps" data-en="Google Maps">Google Maps</dt><dd><a href="https://www.google.com/maps/search/?api=1&query=Khan%20Dental%20Clinic&query_place_id=ChIJOaRCGfXHVTcR8HXUzyVW5OY" target="_blank" rel="noopener" data-bn="ম্যাপে খুলুন" data-en="Open in Maps">ম্যাপে খুলুন</a></dd></div>
           <div><dt data-bn="সময়" data-en="Hours">সময়</dt><dd data-bn="প্রতিদিন, ২৪ ঘণ্টা" data-en="Every day, 24 hours">প্রতিদিন, ২৪ ঘণ্টা</dd></div>
           <div class="cta">
             <a class="btn" href="tel:+8801921553385" data-bn="এখনই কল করুন" data-en="Call now">এখনই কল করুন</a>
-            <a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&destination=23.7767366,90.4239653" target="_blank" rel="noopener" data-bn="পথ দেখুন" data-en="Get directions">পথ দেখুন</a>
+            <a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&destination=Khan%20Dental%20Clinic&destination_place_id=ChIJOaRCGfXHVTcR8HXUzyVW5OY" target="_blank" rel="noopener" data-bn="পথ দেখুন" data-en="Get directions">পথ দেখুন</a>
           </div>
         </dl>
         <div class="map">
-          <iframe title="Khan Dental Clinic map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=23.7767366,90.4239653&z=16&output=embed"></iframe>
+          <iframe title="Khan Dental Clinic map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Khan%20Dental%20Clinic%2C%20Kha-154%2F2%2C%20Badda%2C%20Dhaka%201212&ll=23.7767366,90.4239653&z=17&output=embed"></iframe>
         </div>
       </div>
     </div>
