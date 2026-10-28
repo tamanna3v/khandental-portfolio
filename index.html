@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>খান ডেন্টাল ক্লিনিক | Khan Dental Clinic, Badda</title>
+<meta name="description" content="Khan Dental Clinic, Badda, Dhaka — root canal, wisdom tooth extraction, caps and crowns. Call +880 1921-553385.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#13294B;      /* deep navy */
+  --ink-soft:#3D5175;
+  --enamel:#FBFCFD;   /* tooth white */
+  --mint:#DCEFE8;     /* clean mint */
+  --mint-deep:#2E7D67;
+  --gum:#E9A3AD;      /* gum pink accent */
+  --line:#D5DEEA;
+  --radius:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--enamel);color:var(--ink);font-family:"Anek Bangla","Noto Sans Bengali",system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--mint-deep);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+/* demo ribbon */
+.demo{background:var(--ink);color:#fff;font-size:14px;text-align:center;padding:7px 16px}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(251,252,253,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;font-size:19px}
+.brand svg{flex:none}
+nav{display:flex;gap:22px;font-weight:500}
+nav a{text-decoration:none;color:var(--ink-soft)}
+nav a:hover{color:var(--ink)}
+.tools{display:flex;gap:8px;align-items:center}
+.lang{border:1.5px solid var(--ink);background:transparent;color:var(--ink);border-radius:999px;padding:6px 14px;font:inherit;font-size:15px;font-weight:600;cursor:pointer}
+.lang:hover{background:var(--ink);color:#fff}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:#fff;text-decoration:none;border-radius:999px;padding:10px 20px;font-weight:600;border:0}
+.btn.alt{background:var(--mint-deep)}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+@media (max-width:820px){nav{display:none}.bar .btn{display:none}}
+
+/* hero */
+.hero{padding:64px 0 56px;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(40px,7vw,76px);line-height:1.02;margin:0 0 18px;font-weight:800;letter-spacing:-.01em}
+.hero p.lead{font-size:20px;color:var(--ink-soft);max-width:34ch;margin:0 0 28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.rating{display:inline-flex;align-items:center;gap:10px;margin-top:28px;text-decoration:none;color:var(--ink-soft);font-size:16px}
+.stars{color:#E2A400;letter-spacing:2px;font-size:18px}
+.tooth-card{background:var(--mint);border-radius:28px;padding:34px 30px;position:relative}
+.tooth-card .big{font-size:clamp(64px,10vw,104px);font-weight:800;line-height:.9;color:var(--mint-deep)}
+.tooth-card .small{font-size:18px;margin-top:10px}
+.tooth-card .addr{margin-top:22px;padding-top:18px;border-top:1px solid rgba(19,41,75,.15);color:var(--ink-soft);font-size:16px}
+.tooth-card svg.deco{position:absolute;right:-18px;top:-22px;opacity:.9}
+@media (max-width:820px){.hero{padding:40px 0}.hero-grid{grid-template-columns:1fr}}
+
+/* sections */
+section{padding:64px 0}
+h2{font-size:clamp(28px,4vw,40px);line-height:1.15;margin:0 0 10px;font-weight:700}
+.sub{color:var(--ink-soft);margin:0 0 34px;max-width:60ch}
+
+/* services */
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:2px solid var(--ink)}
+.svc{padding:26px 22px 28px 0;border-bottom:1px solid var(--line)}
+.svc + .svc{padding-left:22px;border-left:1px solid var(--line)}
+.svc h3{font-size:22px;margin:12px 0 6px}
+.svc p{margin:0;color:var(--ink-soft)}
+.svc-note{margin-top:20px;color:var(--ink-soft);font-size:16px}
+@media (max-width:820px){.services{grid-template-columns:1fr}.svc + .svc{padding-left:0;border-left:0}}
+
+/* why */
+.why{background:var(--ink);color:#fff}
+.why .sub{color:#C6D2E6}
+.why-list{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.why-item{border-left:3px solid var(--gum);padding-left:18px}
+.why-item h3{margin:0 0 6px;font-size:21px}
+.why-item p{margin:0;color:#C6D2E6}
+.why a{color:#fff}
+@media (max-width:820px){.why-list{grid-template-columns:1fr}}
+
+/* visit */
+.visit-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:32px;align-items:stretch}
+.info{display:flex;flex-direction:column;gap:20px}
+.info dt{font-weight:600;font-size:15px;color:var(--ink-soft)}
+.info dd{margin:2px 0 0;font-size:20px}
+.map{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);min-height:320px;background:var(--mint)}
+.map iframe{border:0;width:100%;height:100%;min-height:320px;display:block}
+@media (max-width:820px){.visit-grid{grid-template-columns:1fr}}
+
+.photo{padding:64px 0 0}
+.photo figure{margin:0;border-radius:24px;overflow:hidden;position:relative}
+.photo img{width:100%;height:min(520px,60vw);object-fit:cover;display:block}
+.photo figcaption{position:absolute;left:16px;bottom:16px;background:rgba(251,252,253,.92);border-radius:999px;padding:6px 16px;font-size:15px;font-weight:600}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--ink-soft);font-size:15px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+/* floating call */
+.float{position:fixed;right:16px;bottom:16px;z-index:30;display:none}
+@media (max-width:820px){.float{display:inline-flex}}
+</style>
+</head>
+<body>
+
+<div class="demo" data-bn="নমুনা ডিজাইন — FutureMind-এর প্রস্তাব, ক্লিনিকের অনুমোদনের অপেক্ষায়" data-en="Sample design — a FutureMind proposal, pending the clinic's approval">নমুনা ডিজাইন — FutureMind-এর প্রস্তাব, ক্লিনিকের অনুমোদনের অপেক্ষায়</div>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Khan Dental Clinic">
+      <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 5c-3-2.2-9-2.6-10.6 2.3-1.3 4 .5 7.6 1.6 10.2.9 2.3 1.2 6.5 2.3 8.8.8 1.7 2.7 1.6 3.2-.2.6-2.2.9-6.1 3.5-6.1s2.9 3.9 3.5 6.1c.5 1.8 2.4 1.9 3.2.2 1.1-2.3 1.4-6.5 2.3-8.8 1.1-2.6 2.9-6.2 1.6-10.2C25 2.4 19 2.8 16 5z" fill="#2E7D67"/></svg>
+      <span data-bn="খান ডেন্টাল ক্লিনিক" data-en="Khan Dental Clinic">খান ডেন্টাল ক্লিনিক</span>
+    </a>
+    <nav aria-label="Main">
+      <a href="#services" data-bn="চিকিৎসা" data-en="Treatments">চিকিৎসা</a>
+      <a href="#why" data-bn="কেন আমরা" data-en="Why us">কেন আমরা</a>
+      <a href="#visit" data-bn="ঠিকানা" data-en="Visit">ঠিকানা</a>
+    </nav>
+    <div class="tools">
+      <button class="lang" id="langBtn" type="button" aria-label="Switch to English">English</button>
+      <a class="btn" href="tel:+8801921553385" data-bn="কল করুন" data-en="Call now">কল করুন</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1 data-bn="বাড্ডায় আপনার দাঁতের যত্ন" data-en="Dental care in Badda">বাড্ডায় আপনার দাঁতের যত্ন</h1>
+        <p class="lead" data-bn="রুট ক্যানাল, আক্কেল দাঁত তোলা, ক্যাপ ও ক্রাউন — অভিজ্ঞ ডাক্তারের হাতে, সাশ্রয়ী খরচে।" data-en="Root canals, wisdom tooth extraction, caps and crowns — by experienced dentists, at an affordable cost.">রুট ক্যানাল, আক্কেল দাঁত তোলা, ক্যাপ ও ক্রাউন — অভিজ্ঞ ডাক্তারের হাতে, সাশ্রয়ী খরচে।</p>
+        <div class="cta">
+          <a class="btn" href="tel:+8801921553385"><span data-bn="অ্যাপয়েন্টমেন্টের জন্য কল করুন" data-en="Call for an appointment">অ্যাপয়েন্টমেন্টের জন্য কল করুন</span></a>
+          <a class="btn ghost" href="#visit" data-bn="ঠিকানা দেখুন" data-en="See location">ঠিকানা দেখুন</a>
+        </div>
+        <a class="rating" href="https://www.google.com/maps/search/?api=1&query=Khan%20Dental%20Clinic&query_place_id=ChIJOaRCGfXHVTcR8HXUzyVW5OY" target="_blank" rel="noopener">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <span data-bn="Google-এ ৪.৯ রেটিং, ৪৩০টি রিভিউ" data-en="Rated 4.9 on Google from 430 reviews">Google-এ ৪.৯ রেটিং, ৪৩০টি রিভিউ</span>
+        </a>
+      </div>
+      <div class="tooth-card">
+        <svg class="deco" width="110" height="110" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 5c-3-2.2-9-2.6-10.6 2.3-1.3 4 .5 7.6 1.6 10.2.9 2.3 1.2 6.5 2.3 8.8.8 1.7 2.7 1.6 3.2-.2.6-2.2.9-6.1 3.5-6.1s2.9 3.9 3.5 6.1c.5 1.8 2.4 1.9 3.2.2 1.1-2.3 1.4-6.5 2.3-8.8 1.1-2.6 2.9-6.2 1.6-10.2C25 2.4 19 2.8 16 5z" fill="#fff"/></svg>
+        <div class="big" data-bn="২৪/৭" data-en="24/7">২৪/৭</div>
+        <div class="small" data-bn="প্রতিদিন খোলা, সপ্তাহের সাত দিন" data-en="Open every day of the week">প্রতিদিন খোলা, সপ্তাহের সাত দিন</div>
+        <div class="addr" data-bn="খ-১৫৪/২, বাড্ডা, ঢাকা ১২১২" data-en="Kha-154/2, Badda, Dhaka 1212">খ-১৫৪/২, বাড্ডা, ঢাকা ১২১২</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <h2 data-bn="যে চিকিৎসাগুলো আমরা করি" data-en="Treatments we provide">যে চিকিৎসাগুলো আমরা করি</h2>
+      <p class="sub" data-bn="এক্স-রে দেখে সমস্যা বুঝিয়ে বলা হয়, তারপর চিকিৎসা শুরু।" data-en="We explain the problem from your X-ray before any treatment begins.">এক্স-রে দেখে সমস্যা বুঝিয়ে বলা হয়, তারপর চিকিৎসা শুরু।</p>
+      <div class="services">
+        <div class="svc">
+          <svg width="34" height="34" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 5c-3-2.2-9-2.6-10.6 2.3-1.3 4 .5 7.6 1.6 10.2.9 2.3 1.2 6.5 2.3 8.8.8 1.7 2.7 1.6 3.2-.2.6-2.2.9-6.1 3.5-6.1s2.9 3.9 3.5 6.1c.5 1.8 2.4 1.9 3.2.2 1.1-2.3 1.4-6.5 2.3-8.8 1.1-2.6 2.9-6.2 1.6-10.2C25 2.4 19 2.8 16 5z" fill="none" stroke="#13294B" stroke-width="1.6"/><path d="M13 12v12M19 12v12" stroke="#E9A3AD" stroke-width="2" stroke-linecap="round"/></svg>
+          <h3 data-bn="রুট ক্যানাল" data-en="Root canal treatment">রুট ক্যানাল</h3>
+          <p data-bn="গভীর ক্ষয় নার্ভ পর্যন্ত গেলে দাঁত না তুলে বাঁচিয়ে রাখার চিকিৎসা।" data-en="Saves a tooth when decay has reached the nerve, instead of pulling it.">গভীর ক্ষয় নার্ভ পর্যন্ত গেলে দাঁত না তুলে বাঁচিয়ে রাখার চিকিৎসা।</p>
+        </div>
+        <div class="svc">
+          <svg width="34" height="34" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 5c-3-2.2-9-2.6-10.6 2.3-1.3 4 .5 7.6 1.6 10.2.9 2.3 1.2 6.5 2.3 8.8.8 1.7 2.7 1.6 3.2-.2.6-2.2.9-6.1 3.5-6.1s2.9 3.9 3.5 6.1c.5 1.8 2.4 1.9 3.2.2 1.1-2.3 1.4-6.5 2.3-8.8 1.1-2.6 2.9-6.2 1.6-10.2C25 2.4 19 2.8 16 5z" fill="none" stroke="#13294B" stroke-width="1.6"/><path d="M16 2v-1M23 4l1-1" stroke="#E9A3AD" stroke-width="2" stroke-linecap="round"/></svg>
+          <h3 data-bn="আক্কেল দাঁত তোলা" data-en="Wisdom tooth extraction">আক্কেল দাঁত তোলা</h3>
+          <p data-bn="আটকে থাকা (impacted) আক্কেল দাঁতের সার্জারিসহ সাধারণ দাঁত তোলা।" data-en="Routine extractions, including surgical removal of impacted wisdom teeth.">আটকে থাকা (impacted) আক্কেল দাঁতের সার্জারিসহ সাধারণ দাঁত তোলা।</p>
+        </div>
+        <div class="svc">
+          <svg width="34" height="34" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 5c-3-2.2-9-2.6-10.6 2.3-1.3 4 .5 7.6 1.6 10.2.9 2.3 1.2 6.5 2.3 8.8.8 1.7 2.7 1.6 3.2-.2.6-2.2.9-6.1 3.5-6.1s2.9 3.9 3.5 6.1c.5 1.8 2.4 1.9 3.2.2 1.1-2.3 1.4-6.5 2.3-8.8 1.1-2.6 2.9-6.2 1.6-10.2C25 2.4 19 2.8 16 5z" fill="none" stroke="#13294B" stroke-width="1.6"/><path d="M6 9c3-3 17-3 20 0" stroke="#E9A3AD" stroke-width="2.4" stroke-linecap="round" fill="none"/></svg>
+          <h3 data-bn="ক্যাপ ও ক্রাউন" data-en="Caps and crowns">ক্যাপ ও ক্রাউন</h3>
+          <p data-bn="ভাঙা বা চিকিৎসার পর দুর্বল দাঁতকে আবার আগের আকার আর শক্তি দেওয়া।" data-en="Restores the shape and strength of broken or treated teeth.">ভাঙা বা চিকিৎসার পর দুর্বল দাঁতকে আবার আগের আকার আর শক্তি দেওয়া।</p>
+        </div>
+      </div>
+      <p class="svc-note" data-bn="অন্য কোনো চিকিৎসার জন্য ফোন করে জেনে নিন।" data-en="For any other treatment, please call us to ask.">অন্য কোনো চিকিৎসার জন্য ফোন করে জেনে নিন।</p>
+    </div>
+  </section>
+
+  <section id="why" class="why">
+    <div class="wrap">
+      <h2 data-bn="রোগীরা যা বারবার বলেন" data-en="What patients keep mentioning">রোগীরা যা বারবার বলেন</h2>
+      <p class="sub" data-bn="Google-এ ৪৩০টি রিভিউ থেকে সবচেয়ে বেশি উঠে আসা তিনটি কথা।" data-en="The three things that come up most across 430 Google reviews.">Google-এ ৪৩০টি রিভিউ থেকে সবচেয়ে বেশি উঠে আসা তিনটি কথা।</p>
+      <div class="why-list">
+        <div class="why-item">
+          <h3 data-bn="প্রায় ব্যথাহীন চিকিৎসা" data-en="Nearly pain-free treatment">প্রায় ব্যথাহীন চিকিৎসা</h3>
+          <p data-bn="জটিল দাঁত তোলা আর রুট ক্যানালেও আরামদায়ক অভিজ্ঞতা।" data-en="A comfortable experience, even for complex extractions and root canals.">জটিল দাঁত তোলা আর রুট ক্যানালেও আরামদায়ক অভিজ্ঞতা।</p>
+        </div>
+        <div class="why-item">
+          <h3 data-bn="সাশ্রয়ী খরচ" data-en="Affordable cost">সাশ্রয়ী খরচ</h3>
+          <p data-bn="মানসম্মত চিকিৎসা, খরচ নিয়ে স্পষ্ট কথা।" data-en="Quality care with clear talk about cost.">মানসম্মত চিকিৎসা, খরচ নিয়ে স্পষ্ট কথা।</p>
+        </div>
+        <div class="why-item">
+          <h3 data-bn="আন্তরিক ব্যবহার" data-en="Friendly, attentive staff">আন্তরিক ব্যবহার</h3>
+          <p data-bn="ডাক্তার আর স্টাফ পুরো সময় পাশে থাকেন, চিকিৎসার পরেও খোঁজ নেন।" data-en="Doctors and staff stay with you throughout and follow up after treatment.">ডাক্তার আর স্টাফ পুরো সময় পাশে থাকেন, চিকিৎসার পরেও খোঁজ নেন।</p>
+        </div>
+      </div>
+      <p style="margin-top:30px"><a href="https://www.google.com/maps/search/?api=1&query=Khan%20Dental%20Clinic&query_place_id=ChIJOaRCGfXHVTcR8HXUzyVW5OY" target="_blank" rel="noopener" data-bn="Google-এ সব রিভিউ পড়ুন" data-en="Read all reviews on Google">Google-এ সব রিভিউ পড়ুন</a></p>
+    </div>
+  </section>
+
+  <section class="photo" aria-label="Chamber">
+    <div class="wrap">
+      <figure>
+        <img src="assets/chamber.jpg" alt="Khan Dental Clinic treatment room with dental chair" width="1200" height="900" loading="lazy">
+        <figcaption data-bn="আমাদের চিকিৎসা কক্ষ" data-en="Our treatment room">আমাদের চিকিৎসা কক্ষ</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap">
+      <h2 data-bn="আসুন বা ফোন করুন" data-en="Visit or call">আসুন বা ফোন করুন</h2>
+      <p class="sub" data-bn="আসার আগে একবার ফোন করে নিলে অপেক্ষা কম করতে হবে।" data-en="Call ahead to keep your waiting time short.">আসার আগে একবার ফোন করে নিলে অপেক্ষা কম করতে হবে।</p>
+      <div class="visit-grid">
+        <dl class="info">
+          <div><dt data-bn="ফোন" data-en="Phone">ফোন</dt><dd><a href="tel:+8801921553385" data-bn="০১৯২১-৫৫৩৩৮৫" data-en="+880 1921-553385">০১৯২১-৫৫৩৩৮৫</a></dd></div>
+          <div><dt data-bn="ঠিকানা" data-en="Address">ঠিকানা</dt><dd data-bn="খ-১৫৪/২, বাড্ডা, ঢাকা ১২১২" data-en="Kha-154/2, Badda, Dhaka 1212">খ-১৫৪/২, বাড্ডা, ঢাকা ১২১২</dd></div>
+          <div><dt data-bn="সময়" data-en="Hours">সময়</dt><dd data-bn="প্রতিদিন, ২৪ ঘণ্টা" data-en="Every day, 24 hours">প্রতিদিন, ২৪ ঘণ্টা</dd></div>
+          <div class="cta">
+            <a class="btn" href="tel:+8801921553385" data-bn="এখনই কল করুন" data-en="Call now">এখনই কল করুন</a>
+            <a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&destination=23.7767366,90.4239653" target="_blank" rel="noopener" data-bn="পথ দেখুন" data-en="Get directions">পথ দেখুন</a>
+          </div>
+        </dl>
+        <div class="map">
+          <iframe title="Khan Dental Clinic map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=23.7767366,90.4239653&z=16&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span data-bn="© ২০২৬ খান ডেন্টাল ক্লিনিক, বাড্ডা" data-en="© 2026 Khan Dental Clinic, Badda">© ২০২৬ খান ডেন্টাল ক্লিনিক, বাড্ডা</span>
+    <span data-bn="ওয়েবসাইট: FutureMind" data-en="Website by FutureMind">ওয়েবসাইট: FutureMind</span>
+  </div>
+</footer>
+
+<a class="btn alt float" href="tel:+8801921553385" data-bn="কল করুন" data-en="Call">কল করুন</a>
+
+<script>
+(function(){
+  var btn=document.getElementById('langBtn');
+  function apply(lang){
+    document.documentElement.lang=lang;
+    document.querySelectorAll('[data-bn]').forEach(function(el){
+      el.textContent=el.getAttribute('data-'+lang);
+    });
+    btn.textContent = lang==='bn' ? 'English' : 'বাংলা';
+    btn.setAttribute('aria-label', lang==='bn' ? 'Switch to English' : 'বাংলায় দেখুন');
+    document.title = lang==='bn' ? 'খান ডেন্টাল ক্লিনিক | বাড্ডা, ঢাকা' : 'Khan Dental Clinic | Badda, Dhaka';
+  }
+  var lang='bn';
+  try{ var s=localStorage.getItem('kdc-lang'); if(s==='en'||s==='bn') lang=s; }catch(e){}
+  apply(lang);
+  btn.addEventListener('click',function(){
+    lang = lang==='bn' ? 'en' : 'bn';
+    apply(lang);
+    try{ localStorage.setItem('kdc-lang',lang); }catch(e){}
+  });
+})();
+</script>
+</body>
+</html>
